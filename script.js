@@ -8,7 +8,7 @@ calc.addEventListener("click",function(){
     
     let number1 = document.getElementById("firstnumber").Value;
     let number2 = document.getElementById("secondnumber").Value;
-
+    // console.log('hello');
     newanswer =  number1 + number2;
     const simplecalc = new Calculator(number1, number2);
      

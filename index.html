@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script >
+    function submit() {
+        alert('sumbit')
+    }
+</script>
 <body>
-    <form action="submit">
-        <select name="operation type" id="operation">
+    <form onSubmit="submit" action="http://localhost:8000/submit" method="post">
+        <!-- <select name="operation type" id="operation">
             <option id="add" value="add">add</option>
             <option id="mulitiply" value="product">product</option>
-        </select>
+        </select> -->
+        <br/>
         <label for="firstnumber">first number</label>
         <input type="number" id="firstnumber">
+        <br/>
         <label for="secondnumber">Second number</label>
         <input type="number" id="secondnumber">
+        <br/>
         <button id="btn">submit</button>
     </form>
 </body>
